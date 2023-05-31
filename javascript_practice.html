@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+
+
+
+    <script>
+
+        let phrases = [
+            "I'm hungry.",
+            "I'm tired.",
+            "Random things.",
+            "Knee-slapper"
+        ]
+ Math.random(5);
+        alert(phrase[0])
+
+        function getName() {
+            let greetBox = document.getElementById("greeting");
+            let newName = prompt("What ia your name?")
+            greetBox.innerHTML = "Hello, " + newName
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1 id="greeting" onclick="getName()">Hello, person!</h1>
+</body>
+
+</html>
